@@ -27,7 +27,7 @@ console.log(sumEvens(strNums))
 
 // Find the index of the first value when added to its index = 512 (#ATX!!)
 const atxIdx = (arr) => {
-  let numArray = arr.map(x => parseInt(x))
+  let numArray = arr.map(x => parseInt(x)) 
   let len = numArray.length
   for (let i = 0; i != len; i++) {
     value = numArray[i]
@@ -108,7 +108,7 @@ const weather = [
 ],
 //using a higher order function, create an array of the unique 'weather_state_name' values of the weather array. Your function should return the following array ['Light Cloud', 'Heavy Cloud', 'Showers']
 const weatherStates = () => (weather.map(x => x.weather_state_name).filter((x, y, z) => z.indexOf(x) == y))
-//do you prefer the methods on new lines? because doing it on one line is just so cool.
+//do you prefer the methods on new lines? because doing it all on one line is just so cool.
 
 console.log(weatherStates())
 //or this way
